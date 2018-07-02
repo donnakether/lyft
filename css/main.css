@@ -1,3 +1,296 @@
 /*
- * Estilos de tu proyecto
+ - Botones, hover: `#FF00BF`
+  - Fondo de `footer`: `#333447`
+  - Título del formulario: `#352384`
+  - Texto del formulario: `#728099`
+  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
  */
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+    }
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover{
+    color: #FF00BF;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.container {
+    width: 100%;
+    padding: 2.5% 6%;
+    margin: 0 auto;
+}
+.hero {
+    background-image: url(../assets/images/hero.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+    position: relative;
+}
+.hero nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero nav ul {
+    width: 50%;
+    padding: 0;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.hero nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 4px 0 0 10px;
+}
+.hero nav ul li a {
+    display: inline-block;
+    padding-right: 10px;
+    font-size:18px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.btn-login {
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+.btn-login:hover {
+    border: 1px solid #FF00BF;
+}
+.hero .logo-container {
+    width: 50%;
+    margin-left: auto;
+    padding: 0 0 10px 10px;
+}
+.hero .logo-container img {
+    width: 65px;
+    height: auto;
+    vertical-align: middle;
+}
+.container-row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.sign-up {
+    background-color: #FFFFFF;
+    padding: 5% 0 3% 5%;
+    width: 36.5%;
+    position: relative;
+    right: 0;
+}
+.sign-up h1 {
+    padding-right:14%; 
+    font-size: 39px;
+    line-height: 1;
+    color: #352384;
+    padding-bottom: 12px;
+}
+.sign-up h4 {
+    color: #352384;
+    padding-bottom: 25px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+.tel-number input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #728099 solid 1px;
+    font-size:15px;
+    font-weight: 300;
+    color:#728099;
+    padding: 2% 0;
+    margin-bottom: 30px;
+}
+.btn-sign-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.btn-sign-up button {
+    background-color: #FF00BF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 24px;
+}
+.btn-sign-up button:hover {
+    background-color: #76278F;
+}
+.btn-sign-up p {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: underline;
+    color:#728099;
+}
+.info {
+    font-size:10px;
+    font-weight: 300;
+    line-height: 2;
+}
+.app-overview {
+    margin: 0 auto;
+    padding: 8% 8% 5% 8%;
+    background-image: linear-gradient(#76278F, #2B1E66);
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+.app-overview h1 {
+    font-size: 29px;
+    line-height: .7;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+.app-overview p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.container-column {
+    flex: 0 0 50%;
+}
+.container-column:first-child {
+    margin-top: -25px;
+    padding-left: 40px;
+}
+.container-column:last-child {
+    margin-right: -20px;
+}
+.app-overview .row {
+   padding: 3%; 
+   margin-bottom: 50px;
+}
+.app-overview img {
+    width: 90%;
+    height: auto;
+    vertical-align: middle;
+}
+.videos article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.videos article .description {
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 3%;
+    line-height: 1.5;
+}
+.description small {
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.description h1 {
+    line-height: 1;
+    font-size: 30px;
+    letter-spacing: -0.50px;
+    padding-bottom: 20px;
+}
+.videos article .midia {
+    width: 65%;
+    height: auto;
+}
+.midia iframe {
+    width: 100%;
+    padding: 0;
+    margin-bottom: -4px;
+}
+footer {
+    background-color: #333447;
+    color: #FFFFFF;
+    padding: 5.3% 10.5%;
+    margin: auto;
+    font-weight: 300;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+hr {
+    border-bottom: 1.5px solid #FFFFFF;
+    width: 75%;
+    margin: 0 auto;
+}
+footer h3 {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+.footer-column {
+    flex: 0 0 20%;
+}
+.footer-column img {
+    width: 135px;
+    height: auto;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+footer ul  li {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.social-btns {
+    flex: 0 0 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-btns ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.social-btns ul  li {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 8px;
+}
+.social-btns ul  li:hover {
+    border: 1px solid #FF00BF;
+}
+.social-btns ul  li i {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.footer-credits {
+    text-align: center;
+    font-size: 20px;
+    padding: 3% 0 1% 0;
+}
